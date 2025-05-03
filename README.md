@@ -1,16 +1,49 @@
-# gst_billing_app
+# 🧾 TATA GST Billing App - Flutter
 
-A new Flutter project.
+A robust, high-performance GST Billing App built with Flutter for **TATA Retail Solutions**. Designed to eliminate manual tax calculation errors, streamline invoice generation, and ensure full compliance with Indian GST regulations. This app helps retail cashiers generate quick, accurate, and itemized bills while maintaining a searchable transaction and product history.
 
-## Getting Started
+## 🚀 Features
 
-This project is a starting point for a Flutter application.
+- 🔢 **Automatic GST Calculation** (5%, 12%, 18%, 28%)
+  - Breaks down into **CGST** and **SGST** as per Indian regulations.
+- 🧾 **Invoice Generator**
+  - Instant, itemized bills with tax details.
+- 📦 **Product Management**
+  - Add, update, and search products easily.
+- 📚 **Transaction History**
+  - Stores invoices securely for future reference and insights.
+- ⚡ **High Performance**
+  - Optimized for smooth billing during peak hours.
+- 🧑‍💼 **User-Friendly UI**
+  - Simple, intuitive design for cashiers and store staff.
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 🛠️ Tech Stack
+
+- **Flutter** – Cross-platform UI toolkit
+- **Provider / Riverpod** – State Management
+- **SQLite / Hive** – Local data persistence
+- **Intl Package** – Currency and date formatting
+- **Flutter PDF / Printing** *(optional)* – Invoice export
+
+---
+
+## ⚙️ GST Calculation Logic
+
+For a product with GST rate `R` and base price `P`:
+
+##structure of folder
+
+```bash
+lib/
+├── models/ # Data models (Product, Invoice)
+├── screens/ # UI screens
+├── widgets/ # Reusable UI components
+├── providers/ # State management (Provider/Riverpod)
+├── services/ # Business logic and storage services
+└── utils/ # Helpers and constants
+```
